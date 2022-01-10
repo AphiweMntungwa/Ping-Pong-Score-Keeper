@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+section{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    /* border: 1px solid green; */
+}
+img{
+    width: 100%;
+}
+div{
+    margin-left: 1em;
+    font-family: monospace, serif;
+}
+h2{
+    margin-left: 1em;
+}
+select{
+    border-radius: 5px;
+}
+div[class=buttons]{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 0%;
+}
+button{
+    width: 33%;
+    height: 30px;
+    border-radius: 0%;
+    border: none;
+}
+button:hover{
+    color: white;
+}
+button:nth-of-type(1){
+    background-color: rgb(174,227,4);
+    width: 100%;    
+}
+button:nth-of-type(2){
+    background-color: rgb(72,128,207);
+    width: 100%;    
+}
+button:nth-of-type(3){
+    background-color: rgb(203,62,96);
+    width: 100%;    
+}
+span.editClass{
+    color: green;
+}
+span.secondEditClass{
+    color: red;
+}
+@media (max-width: 931px){
+    div[class=buttons]{
+        flex-direction: column;
+    }
+}
